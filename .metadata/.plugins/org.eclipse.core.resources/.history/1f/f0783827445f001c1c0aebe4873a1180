@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pDAO" class="com.my.product.dao.ProductDAOOracle"></bean>
+	<bean id="pService" class="com.my.product.service.ProductService">
+		<!-- <property name="dao" ref="productDAO"></property> -->
+		<constructor-arg ref="pDAO"/>
+	</bean>
+	<bean id=""
+</beans>
